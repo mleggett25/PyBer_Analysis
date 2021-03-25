@@ -21,3 +21,23 @@ average_fare_per_ride = total_fares / total_rides
 average_fare_per_driver = total_fares / total_drivers
 ```
 
+I finally created the PyBer summary data frame and formatted the data frame by adding the dollar sign ($) to the columns related to fares and rounding them to two decimal places.
+
+```
+pyber_summary_df = pd.DataFrame({
+    "Total Rides": total_rides,
+    "Total Drivers": total_drivers,
+    "Total Fares": total_fares,
+    "Average Fare per Ride": average_fare_per_ride,
+    "Average Fare per Driver": average_fare_per_driver})
+
+pyber_summary_df.index.name = None
+
+pyber_summary_df["Total Fares"] = pyber_summary_df["Total Fares"].map("${:,.2f}".format)
+pyber_summary_df["Average Fare per Ride"] = pyber_summary_df["Average Fare per Ride"].map("${:.2f}".format)
+pyber_summary_df["Average Fare per Driver"] = pyber_summary_df["Average Fare per Driver"].map("${:.2f}".format)
+
+pyber_summary_df
+```
+
+The output from running the script produces the following data frame:
