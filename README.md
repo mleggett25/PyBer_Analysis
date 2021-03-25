@@ -6,6 +6,8 @@
 The purpose of this analysis was to create a summary data frame of the PyBer company's ride-sharing data by city type, and create a multiple-line graph showing the total weekly fares for each city type.
 
 ## Results
+
+### PyBer Summary Data
 To create the summary data frame of the ride-sharing data by city type, I first initialized three variables to get the total rides, total drivers, and total fares.
 
 ```
@@ -44,4 +46,8 @@ The output from running the script produces the following data frame:
 
 ![PyBer Summary](./Resources/pyber_summary_df.PNG)
 
+### Total Fare by City Type Line Graph
+To create the line graph showing the total weekly fares for each city type, I first used the groupby() function to create a new data frame showing the sum of the fares by the city type and date. After resetting the index, I then 
 
+```
+fares_sum_df = pyber_data_df.groupby(["type","date"]).sum()["fare"]
