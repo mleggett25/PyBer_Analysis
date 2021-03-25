@@ -68,4 +68,5 @@ fares_sum_pivot_week_df = fares_sum_pivot.resample("W").sum()
 
 ## Summary
 Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
+
 1. 
