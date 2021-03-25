@@ -47,7 +47,13 @@ The output from running the script produces the following data frame:
 ![PyBer Summary](./Resources/pyber_summary_df.PNG)
 
 ### Total Fare by City Type Line Graph
-To create the line graph showing the total weekly fares for each city type, I first used the groupby() function to create a new data frame showing the sum of the fares by the city type and date. After resetting the index, I then 
+To create the line graph showing the total weekly fares for each city type, I first used the groupby() function to create a new data frame showing the sum of the fares by the city type and date. After resetting the index, I then created a pivot table with the date as the index, the city type as the columns, and the values as the fares.
 
 ```
 fares_sum_df = pyber_data_df.groupby(["type","date"]).sum()["fare"]
+fares_sum_df = fares_sum_df.reset_index()
+fares_sum_pivot = fares_sum_df.pivot(index="date", columns="type", values="fare")
+fares_sum_pivot
+```
+
+
