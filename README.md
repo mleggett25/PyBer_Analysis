@@ -41,3 +41,7 @@ pyber_summary_df
 ```
 
 The output from running the script produces the following data frame:
+
+![PyBer Summary](./Resources/pyber_summary_df.PNG)
+
+
