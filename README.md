@@ -56,4 +56,16 @@ fares_sum_pivot = fares_sum_df.pivot(index="date", columns="type", values="fare"
 fares_sum_pivot
 ```
 
+Since the resulting data frame was large with 2375 rows and had many NaN values, I created a new dataframe by using the resample() function by week and got the sum of the fares for each week.
 
+```
+fares_sum_pivot = fares_sum_pivot.loc['2019-01-01':'2019-04-29']
+fares_sum_pivot.index = pd.to_datetime(fares_sum_pivot.index)
+fares_sum_pivot_week_df = fares_sum_pivot.resample("W").sum()
+```
+
+
+
+## Summary
+Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
+1. 
