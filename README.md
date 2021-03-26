@@ -46,6 +46,8 @@ The output from running the script produces the following data frame:
 
 ![PyBer Summary](./Resources/pyber_summary_df.PNG)
 
+As we can see from the table, both rural and suburban have more total rides than total drivers, while urban has more total drivers than total rides. The averages of fare per ride and fare per driver are also much higher in rural and suburban areas compared to urban areas. This is due to the population density and the differences in the supply and demand, as well as the distance between the starting points and the destination. It seems reasonable to assume that trips have the potential to be longer in rural areas, and therefore cost more, while trips within urban areas have the potential to be shorter, and therefore cost less.
+
 ### Total Fare by City Type Line Graph
 To create the line graph showing the total weekly fares for each city type, I first used the groupby() function to create a new data frame showing the sum of the fares by the city type and date. After resetting the index, I then created a pivot table with the date as the index, the city type as the columns, and the values as the fares.
 
@@ -80,6 +82,8 @@ style.use('fivethirtyeight')
 The output from running the script produces the following graph:
 
 ![Total Fare by City Type](./Resources/total_fare_by_type_graph.png)
+
+As we can see from the graph, the line graph shows that consistently over time urban has the highest total fare, suburban the next highest, and urban the lowest. There is also a noticeable slight peak in total fares for all three city types near the middle to end of February. This could be explained by the holidays during that time, most notably Valentine's Day and President's Day which creates a long weekend for many people.
 
 ## Summary
 Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
