@@ -69,4 +69,6 @@ fares_sum_pivot_week_df = fares_sum_pivot.resample("W").sum()
 ## Summary
 Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
 
-1. 
+1. PyBer could offer a subscription service with a fixed fee. In urban areas, we see that the demand for a PyBer ride is much lower than the supply of PyBer drivers. As there is a high amount of commuters in urban areas and many people within cities do not own cars, a subscription service could incentivize more people to use PyBer as the costs are more predictable for the consumer.
+2. PyBer could offer more bonuses and incentives for being a PyBer driver. For example, PyBer could create a program where drivers receive a bonus for driving a certain amount of people daily or weekly. This could potentially increase the amount of PyBer drivers which is needed in rural and subruban areas where the demand for a PyBer ride is higher than the supply PyBer drivers.
+3. In the near future, PyBer could look to begin investing in and building autonomous vehicles. With autonomous vehicles, PyBer can almost instantly control the supply of PyBer drivers in a given area, putting vehicles where they are needed most or removing them from areas where there are too many drivers. Autonomous vehicles could also help reduce costs associated with paying human drivers.
