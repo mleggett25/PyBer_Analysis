@@ -64,7 +64,22 @@ fares_sum_pivot.index = pd.to_datetime(fares_sum_pivot.index)
 fares_sum_pivot_week_df = fares_sum_pivot.resample("W").sum()
 ```
 
+To create the line graph, I used the object-oriented interface method with the df.plot() function and formatted it with the Matplotlib fivethirtyeight graph style.
 
+```
+fig, ax = plt.subplots(figsize=(12,6))
+fares_sum_pivot_week_df.plot(ax=ax)
+ax.set_xlabel('Date')
+ax.set_ylabel('Fare ($USD)')
+ax.set_title("Total Fare by City Type")
+
+from matplotlib import style
+style.use('fivethirtyeight')
+```
+
+The output from running the script produces the following graph:
+
+![Total Fare by City Type](./Resources/total_fare_by_type.PNG)
 
 ## Summary
 Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
