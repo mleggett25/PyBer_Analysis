@@ -79,7 +79,7 @@ style.use('fivethirtyeight')
 
 The output from running the script produces the following graph:
 
-![Total Fare by City Type](./Resources/total_fare_by_type.PNG)
+![Total Fare by City Type](./Resources/total_fare_by_type_graph.PNG)
 
 ## Summary
 Based on the results of the analysis, I would suggest three business recommendations to the PyBer CEO for addressing the disparities among the city types:
